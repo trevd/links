@@ -6,8 +6,7 @@ link_list = [],
 vidDir = "http://thenewcode.com/assets/videos/",
 currentVid = 0,
 allLnks = video_links.children,
-lnkNum = allLnks.length;
-video.removeAttribute("controls");
+lnkNum = allLnks.length
 video.removeAttribute("poster");
 
 video.addEventListener('click', () => { video.play(); })
