@@ -1,32 +1,91 @@
-<!DOCTYPE html> 
-<html> 
-<body> 
-E1
-<video width="400" controls>
-  <source src="https://1fgm8zw.oloadcdn.net/dl/l/-9-UQCdyTK6a9OWE/9SVtLvfyhr4/Hot.Streets.S01E01.Got.a.Minute.for.Love.720p.AS.WEB-DL.AAC2.0.H.264-RTN.mkv.mp4?mime=true" type="video/mp4">
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Automatic HTML5 Video Playlist</title>
+  
+  
+  
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      body { background: #222; }
+#video_player { 
+  display: table; line-height: 0;
+  font-size: 0; background: #000;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#video_container { 
+  position: relative;
+}
+#video_player div, #video_player figcaption { 
+  display: table-cell;
+  vertical-align: top; 
+}
+#video_container video { 
+  position: absolute; 
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+#video_player figcaption { width: 25%; }
+#video_player figcaption a { display: block; }
+#video_player figcaption a { 
+  opacity: .5;
+  transition: 1s opacity; 
+}
+#video_player figcaption a img, figure video { 
+  width: 100%; height: auto; 
+}
+#video_player figcaption a.currentvid, #video_player figcaption a:hover, #video_player figcaption a:focus { opacity: 1; }
+@media (max-width: 700px) {
+  #video_player video, #video_player figcaption { 
+    display: table-row; 
+  }
+#video_container { padding-top: 56.25%; }
+#video_player figcaption a { 
+  display: inline-block; width: 33.33%; 
+}
+}
+
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+
+  <figure id="video_player">
+  <div id="video_container">
+  <video controls poster="http://thenewcode.com/assets/images/vid-glacier.jpg" playsinline>
+    <source src="http://thenewcode.com/assets/videos/glacier.mp4" type="video/mp4">
+    <source src="http://thenewcode.com/assets/videos/glacier.webm" type="video/webm">
 </video>
-E2
-<video width="400" controls>
-  <source src="https://1fhjm3t.oloadcdn.net/dl/l/ZoCOs4eKDCyWUDDQ/MkHj0FcJsME/hot.streets.s01e02.hdtv.x264-w4f.mp4?mime=true" type="video/mp4">
-</video>
-E3
-<video width="400" controls>
-  <source src="https://1fgqfvl.oloadcdn.net/dl/l/waWF1BaxdMTBP-0K/I6a_IwieUJY/hot.streets.s01e03.720p.hdtv.x264-w4f.mkv.mp4?mime=true" type="video/mp4">
-</video>
-E4
-<video width="400" controls>
-  <source src="https://1fiag0v.oloadcdn.net/dl/l/DgBIpUKJMAK0K6IP/lBoW0ZlM7gE/hot.streets.s01e04.hdtv.x264-w4f.mkv.mp4?mime=true" type="video/mp4">
-</video>
-E5
-<video width="400" controls>
-  <source src="https://1fiag15.oloadcdn.net/dl/l/7k2-vKLqUluZK5Rv/rPLxLtgsiLs/hot.streets.s01e05.hdtv.x264-w4f.mkv.mp4?mime=true" type="video/mp4">
-</video>
-E6
-<video width="400" controls>
-  <source src="https://1fhjm3v.oloadcdn.net/dl/l/VNgVezG24zw_Tsqy/7DcXtz284RQ/hot.streets.s01e06.hdtv.x264-w4f.mkv.mp4?mime=true" type="video/mp4">
-</video>
+</div>
+<figcaption>
+  <a href="http://thenewcode.com/assets/videos/glacier.mp4" class="currentvid">
+    <img src="http://thenewcode.com/assets/images/vid-glacier.jpg" alt="Athabasca Glacier">
+  </a>
+  <a href="http://thenewcode.com/assets/videos/lake.mp4">
+    <img src="http://thenewcode.com/assets/images/vid-lake.jpg" alt="Athabasca Lake">
+  </a>
+  <a href="http://thenewcode.com/assets/videos/mountain.mp4">
+    <img src="http://thenewcode.com/assets/images/vid-mountain.jpg" alt="Mountain">
+  </a>
+</figcaption>
+</figure>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
   
 
-</body> 
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
 </html>
